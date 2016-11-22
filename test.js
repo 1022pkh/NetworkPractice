@@ -9,9 +9,9 @@ var session = require('express-session');
 var connection = mysql.createConnection({
     host    :'localhost',
     port : 3306,
-    user : 'root',
-    password : 'pkh1022',
-    database:'practice'
+    user : '',
+    password : '',
+    database:''
 });
 //이렇게 명시적으로 connect 메서드를 이용해서 connection을 연결하거나 또는 첫번째 Query가 실행될 때, 위의 connection 객체의 정보를 이용해서 connection이 생성된다.
 connection.connect(function(err) {
